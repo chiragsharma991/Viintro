@@ -1,0 +1,3 @@
+set solib-search-path D:/Dev/AndroidApp/AndroidStudio/video-compressor/app/src/main/obj/local/armeabi
+source C:/Users/DavidY/AppData/Local/Android/sdk/ndk-bundle/prebuilt/common/gdb/common.setup
+directory C:/Users/DavidY/AppData/Local/Android/sdk/ndk-bundle/platforms/android-16/arch-arm/usr/include C:/Users/DavidY/AppData/Local/Android/sdk/ndk-bundle/sources//android/cpufeatures D:/Dev/AndroidApp/AndroidStudio/video-compressor/app/src/main/jni D:/Dev/AndroidApp/AndroidStudio/video-compressor/app/src/main/jni/ D:/Dev/AndroidApp/AndroidStudio/video-compressor/app/src/main/jni/armeabi/include C:/Users/DavidY/AppData/Local/Android/sdk/ndk-bundle/sources/cxx-stl/system

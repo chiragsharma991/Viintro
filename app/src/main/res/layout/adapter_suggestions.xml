@@ -1,0 +1,127 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginRight="@dimen/margin_cardview_left_right"
+    android:layout_marginLeft="@dimen/margin_cardview_left_right"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="6dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rel_suggestions_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_suggestions"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/margin_search_home"
+                android:layout_width="@dimen/wid_ht_img_connections"
+                android:layout_height="@dimen/wid_ht_img_connections" />
+
+
+            <TextView
+                android:id="@+id/txt_suggestions_name"
+                android:layout_marginTop="@dimen/top_txt_name_inv_conn_sugg"
+                android:layout_marginRight="@dimen/marg_right_txt_name_inv_conn_sugg"
+                android:layout_marginLeft="@dimen/marg_left_txt_name_inv_conn_sugg"
+                android:text=""
+                android:textSize="@dimen/txt_name_inv_conn_sugg"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/btn_More"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_More"
+                android:visibility="gone"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentRight="true"
+                android:text="..."
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="top|center_horizontal"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/txt_designation"
+                android:layout_below="@+id/txt_suggestions_name"
+                android:layout_marginRight="@dimen/marg_right_txt_name_inv_conn_sugg"
+                android:layout_marginLeft="@dimen/marg_left_txt_name_inv_conn_sugg"
+                android:text=""
+                android:textSize="@dimen/txt_desg_inv_conn_sugg"
+                android:textColor="@color/txt_designation_suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_btn_connect_remove"
+            android:layout_marginTop="@dimen/top_btn_inv_conn_sugg"
+            android:layout_below="@+id/rel_suggestions"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_btn_inv_conn_sugg">
+
+            <Button
+                android:id="@+id/btn_Connect_suggestions"
+                android:background="@android:color/transparent"
+                android:layout_gravity="left"
+                android:text="Connect"
+                android:textSize="@dimen/txt_btn_inv_conn_sugg"
+                android:textColor="@color/btn_Post"
+                android:layout_weight="0.45"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_btn_inv_conn_sugg"
+                android:textAllCaps="false"/>
+
+
+            <RelativeLayout
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_btn_inv_conn_sugg">
+
+                <View
+                    android:layout_centerHorizontal="true"
+                    android:background="#efefef"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_Follow_suggestions"
+                android:background="@android:color/transparent"
+                android:text="@string/Follow"
+                android:textSize="@dimen/txt_btn_inv_conn_sugg"
+                android:textColor="@color/btn_Post"
+                android:layout_weight="0.45"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_btn_inv_conn_sugg"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/lin_btn_connect_remove"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

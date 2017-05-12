@@ -1,0 +1,14 @@
+prefix=/home/david/DevTools/android-ndk-r10d/sources/ffmpeg-2.6.2.armv7a/android/armv7-a
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 54.20.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm
+Cflags: -I${includedir}

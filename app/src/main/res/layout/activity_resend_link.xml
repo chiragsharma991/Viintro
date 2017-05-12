@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_resend_link"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundSplash2">
+
+    <Button
+        android:id="@+id/header"
+        android:background="@mipmap/viintro_logo"
+        android:layout_marginTop="@dimen/top_login_header"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/width_login_header"
+        android:layout_height="@dimen/height_login_header" />
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel_orange_background"
+            android:background="@drawable/bg_orange_top_to_bottom"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="@dimen/left_orange_background"
+            android:layout_marginRight="@dimen/right_orange_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:background="@color/white"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="@dimen/left_white_background"
+            android:layout_marginRight="@dimen/right_white_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/rel_white_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/reset_white_bg_height">
+
+                <TextView
+                    android:id="@+id/text_resetLink"
+                    android:layout_marginTop="@dimen/top_reset_link"
+                    android:layout_marginLeft="@dimen/forgot_content_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_reset_link"
+                    android:textColor="@color/txt_reset_grey"/>
+
+                <Button
+                    android:id="@+id/btn_BacktoLogin"
+                    android:layout_marginTop="@dimen/top_back_login_btn"
+                    android:layout_marginLeft="@dimen/forgot_content_padding"
+                    android:layout_marginRight="@dimen/forgot_content_padding"
+                    android:text="Back to Log in"
+                    android:textSize="@dimen/txt_forgot_submit"
+                    android:textColor="@color/btn_Login"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_border_orange"
+                    android:layout_height="@dimen/btn_login_height"
+                    android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"/>
+
+
+                <TextView
+                    android:id="@+id/text_resend"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_resend_link"
+                    android:textSize="@dimen/txt_resend_link"
+                    android:textColor="@color/btn_JoinNow"
+                    android:layout_marginTop="@dimen/top_resend_link"
+                    android:layout_marginRight="@dimen/forgot_content_padding"
+                    android:layout_weight="1" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

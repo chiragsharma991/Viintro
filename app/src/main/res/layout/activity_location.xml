@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/backgroundSplash2">
+
+    <Button
+        android:id="@+id/header"
+        android:background="@mipmap/viintro_logo"
+        android:textSize="20sp"
+        android:layout_marginTop="22dp"
+        android:layout_width="@dimen/width_login_header"
+        android:layout_height="@dimen/height_login_header"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_orange_background"
+            android:background="@drawable/bg_orange_top_to_bottom"
+            android:layout_marginTop="@dimen/login_orange_top"
+            android:layout_marginLeft="@dimen/left_orange_background"
+            android:layout_marginRight="@dimen/right_orange_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/location_orange_bg_height">
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="@dimen/login_white_top"
+            android:layout_marginLeft="@dimen/left_white_background"
+            android:layout_marginRight="@dimen/right_white_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/location_white_bg_height"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true" >
+
+        <RelativeLayout
+            android:id="@+id/rel_white_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/text_location"
+                android:text="My Location"
+                android:layout_marginTop="@dimen/location_top"
+                android:layout_marginLeft="@dimen/location_left"
+                android:textSize="@dimen/txt_forgotpw"
+                android:textColor="@color/forgotpw_page_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/txt_incorrect_email"
+                android:layout_below="@+id/input_email"
+                android:visibility="gone"
+                android:textColor="@color/red_incorrect"
+                android:textSize="@dimen/txt_incorrect"
+                android:layout_marginRight="@dimen/forgot_content_padding"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/llLocation"
+                android:layout_marginTop="@dimen/text_location_top"
+                android:layout_marginLeft="@dimen/text_location_left"
+                android:layout_marginRight="@dimen/text_location_left"
+                android:layout_below="@+id/text_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:id="@+id/text_selectedlocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:textSize="@dimen/text_select_location"
+                    android:text="@string/select_location" />
+
+                <ImageView
+                    android:id="@+id/find_location"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/location_icon" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submitLocation"
+                android:layout_below="@+id/llLocation"
+                android:layout_marginTop="@dimen/btn_location_top"
+                android:layout_marginLeft="@dimen/forgot_content_padding"
+                android:layout_marginRight="@dimen/forgot_content_padding"
+                android:text="@string/text_location_submit"
+                android:textSize="@dimen/txt_forgot_submit"
+                android:textColor="@color/text_onboarding"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_border_orange"
+                android:layout_height="@dimen/btn_login_height"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

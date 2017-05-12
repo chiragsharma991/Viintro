@@ -1,0 +1,29 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share_via"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Share via"
+        />
+
+    <item
+        android:id="@+id/hide_post"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Hide this post"
+        />
+
+    <item
+        android:id="@+id/unfollow"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Unfollow"
+        />
+
+    <item
+        android:id="@+id/report_post"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Report this post"
+        />
+
+</menu>

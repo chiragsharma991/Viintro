@@ -1,0 +1,109 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview_suggestions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/rel_whoviewed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_whoviewed"
+            android:background="@color/black"
+            android:layout_margin="10dp"
+            android:layout_width="@dimen/wid_ht_img_connections"
+            android:layout_height="@dimen/wid_ht_img_connections" />
+
+
+        <TextView
+            android:id="@+id/txt_whoviwed_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="60dp"
+            android:text=""
+            android:textSize="@dimen/connection_txt_name"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/btn_More"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_More"
+            android:visibility="gone"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:text="..."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="top|center_horizontal"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/txt_designation"
+            android:layout_below="@+id/txt_whoviwed_name"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textSize="@dimen/connection_txt_name"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/rel_whoviewed"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height">
+
+        <Button
+            android:id="@+id/btn_Connect_Whoviewed"
+            android:layout_gravity="left"
+            android:background="@drawable/edittext_border"
+            android:text="Connect"
+            android:textSize="@dimen/connection_txt_name"
+            android:textColor="@color/black"
+            android:layout_weight="0.45"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height"
+            android:textAllCaps="false"/>
+
+
+        <View
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+        <Button
+            android:id="@+id/btn_Follow_Whoviewed"
+            android:background="@drawable/edittext_border"
+            android:text="@string/Follow"
+            android:textSize="@dimen/connection_txt_name"
+            android:textColor="@color/black"
+            android:layout_weight="0.45"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/backgroundSplash2"/>
+
+</RelativeLayout>

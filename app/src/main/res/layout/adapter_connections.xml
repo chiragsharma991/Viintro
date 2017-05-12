@@ -1,0 +1,75 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_connections"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginRight="@dimen/margin_cardview_left_right"
+    android:layout_marginLeft="@dimen/margin_cardview_left_right"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="6dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_connections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_connections"
+            android:background="@color/black"
+            android:layout_marginTop="@dimen/margin_search_home"
+            android:layout_width="@dimen/wid_ht_img_connections"
+            android:layout_height="@dimen/wid_ht_img_connections" />
+
+
+        <TextView
+            android:id="@+id/txt_connection_name"
+            android:layout_marginTop="@dimen/top_txt_name_inv_conn_sugg"
+            android:layout_marginRight="@dimen/marg_right_txt_name_inv_conn_sugg"
+            android:layout_marginLeft="@dimen/marg_left_txt_name_inv_conn_sugg"
+            android:text=""
+            android:textSize="@dimen/txt_name_inv_conn_sugg"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/btn_More"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/btn_More"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/wd_ht_btn_more_conn"
+            android:layout_height="@dimen/wd_ht_btn_more_conn">
+
+            <Button
+                android:layout_marginTop="@dimen/margin_search_home"
+                android:layout_width="@dimen/width_btn_more_conn"
+                android:layout_height="@dimen/height_btn_more_conn"
+                android:background="@mipmap/view_more_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_designation"
+            android:layout_below="@+id/btn_More"
+            android:layout_marginRight="@dimen/marg_right_txt_name_inv_conn_sugg"
+            android:layout_marginLeft="@dimen/marg_left_txt_name_inv_conn_sugg"
+            android:text=""
+            android:textSize="@dimen/txt_desg_inv_conn_sugg"
+            android:textColor="@color/txt_designation_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_below="@+id/txt_designation"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

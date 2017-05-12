@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Video Compressor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_compression_option">CompressionOptionActivity</string>
+    <string name="title_activity_queue_list">QueueListActivity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1034436403034197/2005675667</string>
+
+</resources>

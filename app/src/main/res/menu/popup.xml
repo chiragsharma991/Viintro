@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Save Profile"
+        android:icon="@android:drawable/ic_media_play"
+        android:id="@+id/save_profile"
+        />
+
+    <item
+        android:title="Remove Connections"
+        android:icon="@android:drawable/ic_media_play"
+        android:id="@+id/remove_connection"
+        />
+
+    <item
+        android:title="Block"
+        android:icon="@android:drawable/ic_media_play"
+        android:id="@+id/block"
+        />
+
+
+</menu>

@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview_people"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/inner_rel_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_people"
+            android:layout_margin="10dp"
+            android:layout_width="@dimen/wid_ht_img_connections"
+            android:layout_height="@dimen/wid_ht_img_connections" />
+
+
+        <TextView
+            android:id="@+id/txt_people_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="60dp"
+            android:text=""
+            android:textSize="@dimen/connection_txt_name"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/txt_designation"
+            android:layout_below="@+id/txt_people_name"
+            android:layout_marginLeft="60dp"
+            android:text=""
+            android:textSize="@dimen/connection_txt_name"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/txt_place"
+            android:layout_below="@+id/txt_designation"
+            android:layout_marginLeft="60dp"
+            android:text=""
+            android:textSize="@dimen/connection_txt_name"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/backgroundSplash2"
+        android:layout_below="@+id/inner_rel_people"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+</RelativeLayout>

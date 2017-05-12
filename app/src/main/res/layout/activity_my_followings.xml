@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/header"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_followings"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/txt_no_followings"
+        android:visibility="gone"
+        android:text="No Followings"
+        android:textSize="@dimen/btn_text_Size"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/txt_no_internet_connection"
+        android:visibility="gone"
+        android:text=""
+        android:textSize="@dimen/btn_text_Size"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+
+</RelativeLayout>

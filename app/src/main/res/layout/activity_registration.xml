@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/backgroundSplash2">
+
+    <RelativeLayout
+        android:id="@+id/rel_register_main"
+        android:background="@color/backgroundSplash2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/rel_register_main1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+
+                <Button
+                    android:id="@+id/header"
+                    android:background="@mipmap/viintro_logo"
+                    android:layout_marginTop="@dimen/top_login_header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/width_login_header"
+                    android:layout_height="@dimen/height_login_header" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_orange_background"
+                    android:background="@drawable/bg_orange_top_to_bottom"
+                    android:layout_marginTop="@dimen/registration_orange_top"
+                    android:layout_marginLeft="@dimen/left_orange_background"
+                    android:layout_marginRight="@dimen/right_orange_background"
+                    android:layout_marginBottom="@dimen/login_orange_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="@dimen/registration_white_top"
+                    android:background="@color/white"
+                    android:layout_marginLeft="@dimen/left_white_background"
+                    android:layout_marginRight="@dimen/right_white_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="0dp"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardElevation="6dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_white_background"
+                        android:paddingLeft="@dimen/login_content_padding"
+                        android:paddingRight="@dimen/login_content_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_name"
+                        android:background="@drawable/edittext_border"
+                        app:hintTextAppearance="@style/CustomTextAppearance"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/hinttextcolor"
+                        android:layout_height="@dimen/edt_height"
+                        android:layout_marginTop="@dimen/top_registration_edt_name"
+                        android:gravity="bottom"
+                        android:clipToPadding="false" >
+
+                        <EditText
+                            android:id="@+id/edt_Name"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edt_height"
+                            android:maxLines="1"
+                            android:textSize="@dimen/txt_edt_login_page"
+                            android:textColor="@color/black"
+                            android:inputType="textCapWords"
+                            android:paddingBottom="2dp"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/edt_Email"
+                            android:hint="Name" />
+
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_incorrect_name"
+                        android:layout_below="@+id/input_name"
+                        android:visibility="gone"
+                        android:textColor="@color/red_incorrect"
+                        android:textSize="@dimen/txt_incorrect"
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_email"
+                        android:background="@drawable/edittext_border"
+                        app:hintTextAppearance="@style/CustomTextAppearance"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/hinttextcolor"
+                        android:layout_height="@dimen/edt_height"
+                        android:paddingTop="@dimen/text_inputtype_padding"
+                        android:layout_marginTop="@dimen/top_registration_edt_email"
+                        android:gravity="bottom"
+                        android:clipToPadding="false" >
+
+                        <EditText
+                            android:id="@+id/edt_Email"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edt_height"
+                            android:maxLines="1"
+                            android:textSize="@dimen/txt_edt_login_page"
+                            android:textColor="@color/black"
+                            android:inputType="textEmailAddress"
+                            android:paddingBottom="2dp"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/edt_Password"
+                            android:hint="Email" />
+
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txt_incorrect_email"
+                        android:layout_below="@+id/input_email"
+                        android:visibility="gone"
+                        android:textColor="@color/red_incorrect"
+                        android:textSize="@dimen/txt_incorrect"
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_password"
+                        android:background="@drawable/edittext_border"
+                        app:hintTextAppearance="@style/CustomTextAppearance"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/hinttextcolor"
+                        android:layout_height="@dimen/edt_height"
+                        android:paddingTop="@dimen/text_inputtype_padding"
+                        android:layout_marginTop="@dimen/top_registration_edt_pw"
+                        android:gravity="bottom"
+                        android:clipToPadding="false"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/grey">
+
+                        <EditText
+                            android:id="@+id/edt_Password"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edt_height"
+                            android:maxLines="1"
+                            android:textSize="@dimen/txt_edt_login_page"
+                            android:textColor="@color/black"
+                            android:inputType="textPassword"
+                            android:paddingBottom="2dp"
+                            android:nextFocusDown="@+id/edt_Password"
+                            android:hint="Password"
+                            android:imeOptions="actionDone" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/btn_show_pw"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:text="@string/btn_show_Pw"
+                        android:textSize="@dimen/edt_size"
+                        android:layout_marginTop="@dimen/top_registration_edt_pw"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_incorrect_pw"
+                        android:layout_below="@+id/input_password"
+                        android:visibility="gone"
+                        android:textColor="@color/red_incorrect"
+                        android:textSize="@dimen/txt_incorrect"
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btn_Register"
+                        android:enabled="false"
+                        android:text="@string/btn_Register"
+                        android:textSize="@dimen/txt_login_btn"
+                        android:textColor="@color/txt_btn_grey"
+                        android:layout_marginTop="@dimen/top_registration_btn_register"
+                        android:background="@drawable/btn_border_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_login_height"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/button_login"
+                        android:textSize="@dimen/txt_joinnow_login_page"
+                        android:textColor="@color/btn_JoinNow"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="@dimen/top_login_btn_inreg_page_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_forgot_pw_join_now"
+                        android:gravity="right|center_vertical"
+                        android:textAllCaps="false" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_Terms_conditions"
+                        android:layout_marginTop="@dimen/top_login_btn_inreg_page_"
+                        android:layout_toLeftOf="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_by_registering"
+                            android:clickable="false"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/by_registering"
+                            android:textSize="@dimen/txt_by_registering"
+                            android:textColor="@color/grey"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false" />
+
+                        <TextView
+                            android:id="@+id/btn_TermsnConditions"
+                            android:clickable="false"
+                            android:layout_below="@+id/txt_by_registering"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/agree_terms_conditions"
+                            android:textSize="@dimen/txt_by_registering"
+                            android:textColor="@color/black"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false" />
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/or_register_with"
+                        android:text="@string/text_register_with"
+                        android:textSize="@dimen/txt_or_login_with"
+                        android:textColor="@color/forgot_pw"
+                        android:layout_marginTop="@dimen/top_register_with"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_fb"
+                        android:layout_marginTop="@dimen/top_fb_reg_page"
+                        android:background="@mipmap/facebook_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_social_login_height">
+
+                        <!--<ImageButton-->
+                            <!--android:background="@mipmap/icon_facebook"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:clickable="false"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_width="@dimen/fb_width"-->
+                            <!--android:layout_height="@dimen/fb_height" />-->
+
+                        <TextView
+                            android:id="@+id/txt_facebook"
+                            android:clickable="false"
+                            android:text="Facebook"
+                            android:gravity="center"
+                            android:textSize="@dimen/txt_social_login"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_twt"
+                        android:background="@mipmap/twitter_button"
+                        android:layout_marginTop="@dimen/top_twit_reg_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_social_login_height">
+
+                        <TextView
+                            android:clickable="false"
+                            android:text="Twitter"
+                            android:gravity="center"
+                            android:textSize="@dimen/txt_social_login"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false" />
+
+
+                        <com.viintro.Viintro.Login.CannonballTwitterLoginButton
+                            android:id="@+id/btn_twitterlogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/twt_height"
+                            android:gravity="center"/>
+
+
+                        <!--<TextView-->
+                            <!--android:clickable="false"-->
+                            <!--android:text="Twitter"-->
+                            <!--android:gravity="center"-->
+                            <!--android:textSize="@dimen/txt_social_login"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textAllCaps="false" />-->
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_gplus"
+                        android:layout_marginTop="@dimen/top_google_reg_page"
+                        android:background="@mipmap/googleplus_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_social_login_height">
+
+                        <!--<ImageView-->
+                            <!--android:background="@mipmap/icon_google_plus"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:clickable="false"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_width="@dimen/gplus_width"-->
+                            <!--android:layout_height="@dimen/gplus_height" />-->
+
+                        <TextView
+                            android:id="@+id/txt_google"
+                            android:clickable="false"
+                            android:text="Google"
+                            android:gravity="center"
+                            android:textSize="@dimen/txt_social_login"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_social_login_height"
+                            android:textAllCaps="false" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_below="@+id/rel_gplus"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <!-- Relative Layout for Popup Email-->
+    <RelativeLayout
+        android:id="@+id/rel_email_popup_register"
+        android:visibility="gone"
+        android:background="#80000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:layout_marginRight="@dimen/right_white_background"
+            android:layout_marginLeft="@dimen/left_white_background"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <TextView
+                android:id="@+id/email"
+                android:padding="@dimen/margin_right"
+                android:text="@string/popup_text"
+                android:textSize="@dimen/txt_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_email_popup"
+                android:layout_below="@+id/email"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_border"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginLeft="@dimen/margin_left"
+                app:hintTextAppearance="@style/CustomTextAppearance"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/hinttextcolor"
+                android:layout_height="@dimen/edt_height"
+                android:paddingTop="@dimen/text_inputtype_padding"
+                android:gravity="bottom"
+                android:clipToPadding="false" >
+
+                <EditText
+                    android:id="@+id/edt_email_popup"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edt_height"
+                    android:maxLines="1"
+                    android:textSize="@dimen/txt_edt_login_page"
+                    android:textColor="@color/edt_text_color"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/edt_padding"
+                    android:paddingTop="@dimen/edt_padding"
+                    android:paddingRight="@dimen/edt_padding"
+                    android:paddingBottom="2dp"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@+id/edt_Password"
+                    android:hint="Email" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_incorrect_email_popup"
+                android:layout_below="@+id/input_email_popup"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:visibility="gone"
+                android:textColor="@color/red_incorrect"
+                android:textSize="@dimen/txt_incorrect"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_submitemail_popup"
+                android:layout_below="@+id/txt_incorrect_email_popup"
+                android:enabled="false"
+                android:text="Submit"
+                android:textSize="@dimen/txt_login_btn"
+                android:textColor="@color/grey"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/btn_border_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_login_height" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+

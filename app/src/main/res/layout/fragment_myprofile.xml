@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.viintro.Viintro.MyProfile.MyProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/relative_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/intro_video_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_edit_introvideo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_mode_edit"
+                android:layout_margin="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_play_arrow_24dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imgPlay" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/llProfileStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative_videoview"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Profile Strength"
+                android:textSize="@dimen/profile_data"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/text_profile_strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:text="50%"/>
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:layout_below="@+id/llProfileStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_right"
+            android:minHeight="30dip"
+            android:maxHeight="30dip"
+            android:thumb="@null"
+            android:progressTint="#00FF7F"
+            android:max="100" />
+
+        <LinearLayout
+            android:id="@+id/linearProfile"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:layout_below="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:src="@mipmap/ic_person_black"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rlEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_ProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_editProfile"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_mode_edit"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_profile_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/text_profile_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/text_profile_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:id="@+id/relativeFollow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_following_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/txt_followers_count"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_upload_videos"
+            android:layout_below="@+id/linearProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/upload_videos"
+            android:background="@drawable/login_button_background_black"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:textAllCaps="true"
+            android:textSize="@dimen/btn_text_Size"
+            android:textColor="@android:color/black"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_tags"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:layout_below="@+id/llProfileViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_add_contactdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_background_black"
+                android:textAllCaps="true"
+                android:text="@string/contact_details"
+                android:textSize="@dimen/btn_text_Size"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_contact_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add_contactdetails" >
+
+                <RelativeLayout
+                    android:id="@+id/rlTitle"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_contacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="CONTACTS"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_editContacts"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_mode_edit"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llProfile"
+                    android:layout_below="@+id/rlTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_person_black"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Profile"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/profile_data"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/text_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/profile_data_value"
+                            android:textColor="@android:color/black"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llWebsite"
+                    android:layout_below="@+id/llProfile"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_person_black"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Website"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/profile_data"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/text_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/profile_data_value"
+                            android:textColor="@android:color/black"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPhone"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/llWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_phone_black"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/profile_data"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/text_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/profile_data_value"
+                            android:textColor="@android:color/black"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_background_black"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative_contact_details"
+                android:text="@string/add_companies"
+                android:textSize="@dimen/btn_text_Size"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_company_details"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add_company"
+                android:visibility="gone"
+                >
+                <RelativeLayout
+                    android:id="@+id/rlTitleCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="COMPANIES"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_editCompany"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_mode_edit"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_company"
+                    android:layout_below="@+id/rlTitleCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_background_black"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative_company_details"
+                android:text="@string/add_designation"
+                android:textSize="@dimen/btn_text_Size"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_designation_details"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add_designation"
+                android:visibility="gone"
+                >
+                <RelativeLayout
+                    android:id="@+id/rlTitleDesignation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="DESIGNATION"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_editDesignation"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_mode_edit"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_designation"
+                    android:layout_below="@+id/rlTitleDesignation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="huijf fiojdf skjc"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_background_black"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative_designation_details"
+                android:text="@string/add_qualification"
+                android:textSize="@dimen/btn_text_Size"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_qualification_details"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add_qualification"
+                android:visibility="gone"
+                >
+                <RelativeLayout
+                    android:id="@+id/rlTitleQualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="QUALIFICATION"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_editQualification"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_mode_edit"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_qualification"
+                    android:layout_below="@+id/rlTitleQualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="huijf fiojdf skjc"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_background_black"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative_qualification_details"
+                android:text="@string/add_school"
+                android:textSize="@dimen/btn_text_Size"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_schools_details"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add_school"
+                android:visibility="gone"
+                >
+                <RelativeLayout
+                    android:id="@+id/rlTitleSchools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="SCHOOLS"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_editSchools"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_mode_edit"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_schools"
+                    android:layout_below="@+id/rlTitleSchools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="huijf fiojdf skjc"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_background_black"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative_schools_details"
+                android:text="@string/add_skills"
+                android:textSize="@dimen/btn_text_Size"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_skills_details"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add_skills"
+                android:visibility="gone">
+                <RelativeLayout
+                    android:id="@+id/rlTitleSkills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="SKILLS"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAllCaps="true" />
+
+                    <ImageView
+                        android:id="@+id/img_editSkills"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_mode_edit"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_skills"
+                    android:layout_below="@+id/rlTitleSkills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="huijf fiojdf skjc"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_background_black"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative_skills_details"
+                android:text="@string/others"
+                android:textSize="@dimen/btn_text_Size"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_others_details"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_other"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rlTitleOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="OTHERS"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/profile_data"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/img_editOthers"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_mode_edit"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_others"
+                    android:layout_below="@+id/rlTitleOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llProfileViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_below="@+id/rl_profile_videos"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:id="@+id/lin_profile_views"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_profile_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/profile_data"
+                    android:clickable="false"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="who's viewed your profile"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_live_videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_live_videos"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/profile_data"
+                    android:textColor="@android:color/black"
+                    android:text="@string/live_videos"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_profile_videos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:layout_below="@+id/btn_upload_videos"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:id="@+id/text_profile_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROFILE VIDEOS"
+                android:textSize="@dimen/profile_data"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_profile_video" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--</ScrollView>-->
+
+</ScrollView>

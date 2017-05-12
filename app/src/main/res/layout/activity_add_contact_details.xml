@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_contact_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_bottom"
+    android:paddingLeft="@dimen/margin_left"
+    android:paddingRight="@dimen/margin_right"
+    android:paddingTop="@dimen/margin_top"
+    android:background="#D8000000"
+    tools:context="com.viintro.Viintro.MyProfile.AddContactDetailsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Add Contact Details"
+            android:textSize="20dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_close_white"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llHeader"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:text="Your Profile" />
+
+    <EditText
+        android:id="@+id/edt_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_profile"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:background="@drawable/myprofile_edittext_background" />
+
+    <TextView
+        android:id="@+id/text_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_profile"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:text="Website" />
+
+    <EditText
+        android:id="@+id/edt_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_website"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:background="@drawable/myprofile_edittext_background" />
+
+
+    <TextView
+        android:id="@+id/text_mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_website"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Mobile number" />
+
+    <LinearLayout
+        android:id="@+id/llMobileno"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text_mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnerCountryCodes"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spinner_background"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_mobilenoStudent"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/myprofile_edittext_background"
+            />
+
+            <TextView
+                android:id="@+id/text_verified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:padding="7dp"
+                android:layout_alignBaseline="@+id/edt_mobilenoProfessional"
+                android:layout_alignBottom="@+id/edt_mobilenoProfessional"
+                android:text="verified"
+                android:textColor="@color/green"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                />
+
+         </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_verify"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/llMobileno"-->
+        <!--android:text="VERIFY"-->
+        <!--android:visibility="gone"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+    <Button
+        android:id="@+id/btn_saveInfo"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/llMobileno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SAVE INFO"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:background="@drawable/login_button_background"/>
+
+
+</RelativeLayout>

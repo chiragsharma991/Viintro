@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_search_home">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_search_home"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/margin_search_home"
+            android:layout_marginLeft="@dimen/margin_search_home"
+            android:background="@drawable/edittext_orange_border"
+            android:layout_toLeftOf="@+id/img_settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:clickable="false"
+            android:textColor="#c6c6c6"
+            android:text="Search"
+            android:textSize="@dimen/txt_search_home"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/width_imgsearch_home"
+            android:layout_height="@dimen/height_imgsearch_home"
+            android:src="@mipmap/search_icon"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_settings"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_width="@dimen/width_imgsettings_home"
+            android:layout_height="@dimen/height_imgsettings_home"
+            android:background="@color/backgroundSplash1"/>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_below="@+id/rel_search"
+        android:layout_above="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@mipmap/video" />-->
+
+    </FrameLayout>
+
+
+    <!--<com.roughike.bottombar.BottomBar-->
+        <!--android:id="@+id/bottomBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--app:bb_tabXmlResource="@xml/bottombar_tabs_five" />-->
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        app:bb_activeTabColor="@color/orange"
+        app:bb_tabXmlResource="@xml/bottombar_tabs_five" />
+
+
+</RelativeLayout>
+

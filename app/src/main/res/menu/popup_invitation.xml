@@ -1,0 +1,11 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share_via"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Share"
+        />
+
+</menu>

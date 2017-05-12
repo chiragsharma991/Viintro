@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroundSplash1">#000000</color>
+    <color name="labelColor">#FFFFFF</color>
+    <color name="sampleVideostextColor">#FFFFFF</color>
+    <color name="div_color">#e6e6e6</color>
+    <color name="edt_text_color">#000000</color>
+    <color name="btn_text_color">#000000</color>
+    <color name="edt_border">#e6e6e6</color>
+    <color name="btn_border">#000000</color>
+    <color name="forgot_pw">#000000</color>
+    <color name="green">#00FF00</color>
+    <color name="orange">#FF7F50</color>
+
+    <item name="modal_background" type="color">#CC000000</item>
+
+
+    <!-- New Colors-->
+    <color name="backgroundSplash2">#fcfcfc</color>
+    <color name="hinttextcolor">#b2b2b2</color>
+    <color name="grey">#b2b2b2</color>
+    <color name="edt_grey">#f2f2f2</color>
+    <color name="txt_btn_grey">#d6d6d6</color>
+    <color name="btn_grey">#dddddd</color>
+    <color name="txt_reset_grey">#9d9d9d</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="btn_Login">#ff704c</color>
+    <color name="btn_Post">#ff654c</color>
+    <color name="btn_JoinNow">#f7894b</color>
+    <color name="btn_Facebook">#39579b</color>
+    <color name="btn_Twitter">#00aaf4</color>
+    <color name="btn_Google">#e32c26</color>
+    <color name="red_incorrect">#ce1125</color>
+    <color name="forgotpw_page_grey">#adadad</color>
+    <color name="tc_header_color">#5c5c5c</color>
+    <color name="edt_record_screen">#453a3a3a</color>
+
+    <color name="text_onboarding">#ff704c</color>
+    <color name="text_profile_name">#3e3e3e</color>
+    <color name="text_profile_desgn">#333333</color>
+    <color name="view_color">#cccccc</color>
+    <color name="seekbar_color">#f97549</color>
+    <color name="profile_views_color">#f2734b</color>
+
+    <color name="record_screen_header_transparent">#70000000</color>
+    <color name="record_screen_overlay_gallery">#60000000</color>
+    <color name="record_screen_overlay_button">#80000000</color>
+
+    <color name="hint_edt_add_link">#45333333</color>
+    <color name="edt_add_link">#333333</color>
+    <color name="grey_bg_transparent">#979797</color>
+    <color name="txt_designation_suggestions">#929292</color>
+
+    <color name="tab_background_selected">#ff4c4c</color>
+    <color name="tab_background_unselected">#979797</color>
+    <color name="tab_txt_selection">#ff664d</color>
+    <color name="txt_sort_by">#262626</color>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@mipmap/ic_home" />
+    <tab
+        id="@+id/tab_connections"
+        icon="@mipmap/connections_unselected" />
+    <tab
+        id="@+id/tab_messages"
+        icon="@mipmap/messages_unseleted" />
+
+    <tab
+        id="@+id/tab_myprofile"
+        icon="@mipmap/my_profile_unselected" />
+
+    <tab
+        id="@+id/tab_notification"
+        icon="@mipmap/notification_unselected" />
+</tabs>

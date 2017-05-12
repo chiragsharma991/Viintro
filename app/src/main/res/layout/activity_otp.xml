@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/backgroundSplash2">
+
+    <Button
+        android:id="@+id/header"
+        android:background="@mipmap/viintro_logo"
+        android:layout_marginTop="@dimen/top_login_header"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/width_login_header"
+        android:layout_height="@dimen/height_login_header"
+        />
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_orange_background"
+            android:background="@drawable/bg_orange_top_to_bottom"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/left_orange_background"
+            android:layout_marginRight="@dimen/right_orange_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="@dimen/left_white_background"
+            android:layout_marginRight="@dimen/right_white_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/rel_white_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txt_Verification"
+                android:layout_marginTop="@dimen/top_verification"
+                android:layout_marginLeft="@dimen/forgot_content_padding"
+                android:text="Verification"
+                android:textSize="@dimen/txt_forgotpw"
+                android:textColor="@color/forgotpw_page_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/text_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_name"
+                android:layout_marginTop="@dimen/top_txt_verification_code"
+                android:layout_marginLeft="@dimen/forgot_content_padding"
+                android:layout_marginRight="@dimen/forgot_content_padding"
+                android:text="@string/text_otp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_verification_code"/>
+
+            <TextView
+                android:id="@+id/textStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignEnd="@+id/text_otp"
+                android:layout_alignRight="@+id/text_otp"
+                android:text="**"/>
+
+            <TextView
+                android:id="@+id/textNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignEnd="@+id/textStar"
+                android:layout_alignRight="@+id/textStar"
+                android:text="72"/>
+
+            <EditText
+                android:id="@+id/edt_otp"
+                android:layout_marginTop="@dimen/top_edt_otp"
+                android:layout_marginLeft="@dimen/forgot_content_padding"
+                android:layout_marginRight="@dimen/forgot_content_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:background="@drawable/edittext_border"
+                android:hint="Enter OTP"
+                android:textSize="@dimen/txt_edt_login_page"/>
+
+
+            <TextView
+                android:id="@+id/txt_incorrect_otp"
+                android:visibility="gone"
+                android:textSize="10sp"
+                android:textColor="@color/red_incorrect"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/forgot_content_padding"
+                android:layout_below="@+id/edt_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_sendOtp"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_login_height"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/top_btn_verify"
+                android:layout_marginLeft="@dimen/forgot_content_padding"
+                android:layout_marginRight="@dimen/forgot_content_padding"
+                android:background="@drawable/btn_border_grey"
+                android:text="@string/text_verify"
+                android:textColor="@color/txt_btn_grey"
+                android:textSize="@dimen/txt_login_btn"/>
+
+            <TextView
+                android:id="@+id/btn_changeNo"
+                android:layout_marginTop="@dimen/top_change_no_resend_otp"
+                android:layout_marginLeft="@dimen/forgot_content_padding"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:textAllCaps="false"
+                android:layout_alignParentLeft="true"
+                android:text="@string/text_changeNo"
+                android:textColor="@color/btn_JoinNow"
+                android:textSize="@dimen/txt_change_no_resend_otp"/>
+
+            <TextView
+                android:id="@+id/text_resend"
+                android:layout_marginTop="@dimen/top_change_no_resend_otp"
+                android:layout_marginRight="@dimen/forgot_content_padding"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:text="@string/text_resend_otp"
+                android:textColor="@color/btn_JoinNow"
+                android:textSize="@dimen/txt_change_no_resend_otp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+

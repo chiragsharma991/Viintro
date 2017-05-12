@@ -1,0 +1,29 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share_profile"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Share Profile"
+        />
+
+    <item
+        android:id="@+id/follow_unfollow"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Follow"
+        />
+
+    <item
+        android:id="@+id/block_unblock"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Block"
+        />
+
+    <item
+        android:id="@+id/remove_connection"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Remove Connection"
+        />
+
+</menu>

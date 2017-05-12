@@ -1,0 +1,74 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_connections"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginRight="@dimen/margin_cardview_left_right"
+    android:layout_marginLeft="@dimen/margin_cardview_left_right"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="6dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_message_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="11dp"
+            android:text="12:30pm"
+            android:textSize="10sp"
+            android:alpha="0.6"
+            android:textColor="#6f6f6f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_messages"
+            android:background="@color/black"
+            android:layout_marginTop="@dimen/margin_search_home"
+            android:layout_width="@dimen/wid_ht_img_connections"
+            android:layout_height="@dimen/wid_ht_img_connections" />
+
+
+        <TextView
+            android:id="@+id/txt_person_name"
+            android:layout_marginTop="@dimen/top_txt_name_inv_conn_sugg"
+            android:layout_marginRight="@dimen/marg_right_txt_name_inv_conn_sugg"
+            android:layout_marginLeft="@dimen/marg_left_txt_name_inv_conn_sugg"
+            android:text=""
+            android:textSize="@dimen/txt_name_inv_conn_sugg"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/txt_message_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/txt_last_message"
+            android:layout_below="@+id/txt_person_name"
+            android:layout_marginRight="@dimen/marg_right_txt_name_inv_conn_sugg"
+            android:layout_marginLeft="@dimen/marg_left_txt_name_inv_conn_sugg"
+            android:text=""
+            android:textSize="@dimen/txt_desg_inv_conn_sugg"
+            android:textColor="@color/txt_designation_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_below="@+id/txt_last_message"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

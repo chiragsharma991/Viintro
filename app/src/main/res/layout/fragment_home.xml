@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rel_search"-->
+        <!--android:background="@android:color/black"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp">-->
+
+        <!--<android.support.v7.widget.SearchView-->
+            <!--android:id="@+id/edt_search"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:queryHint="Search for People, Jobs, Post and more"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp" />-->
+
+    <!--</RelativeLayout>-->
+
+
+
+     <!--TODO: Update blank fragment layout -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_Home"
+        android:layout_below="@+id/rel_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listview_Home"
+            />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        app:srcCompat="@mipmap/new_message_floating_button" />
+
+</RelativeLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/rel_top_header"
+        android:background="@color/record_screen_header_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header_overlay_record_screen">
+
+
+        <TextView
+            android:id="@+id/txt_video_header"
+            android:text="Upload profile video"
+            android:textSize="@dimen/txt_header_record_screen_onboarding"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/top_header_record_screen_onboarding"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/txt_upload_thought"
+            android:text="Upload a thought"
+            android:textSize="@dimen/txt_header_record_screen_onboarding"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/top_header_record_screen_onboarding"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_facing"
+            android:background="@mipmap/icon_camera_reverse"
+            android:layout_width="@dimen/width_img_camera"
+            android:layout_height="@dimen/height_img_camera"
+            android:layout_marginRight="@dimen/margin_img_cam_flash"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/height_header_overlay_record_screen" />
+
+        <Button
+            android:id="@+id/btn_flash"
+            android:background="@mipmap/flash"
+            android:layout_width="@dimen/width_img_flash"
+            android:layout_height="@dimen/height_img_flash"
+            android:layout_marginLeft="@dimen/margin_img_cam_flash"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/height_header_overlay_record_screen" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_profile_video"
+        android:layout_above="@+id/rel_Comment"
+        android:background="@color/record_screen_overlay_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_overlay_record_screen">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/controlsFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true" >
+
+
+            <RelativeLayout
+                android:id="@+id/rel_sample_videos"
+                android:layout_marginLeft="@dimen/margin_img_sample"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/samplebtn"
+                    android:background="@mipmap/sample_videos_icon"
+                    android:layout_width="@dimen/width_img_sample_video"
+                    android:layout_height="@dimen/height_img_sample_video"
+                    android:scaleType="fitXY" />
+
+
+                <TextView
+                    android:id="@+id/txt_Sample_Videos"
+                    android:clickable="false"
+                    android:layout_below="@+id/samplebtn"
+                    android:textColor="@color/white"
+                    android:text="Sample\nVideos"
+                    android:textSize="@dimen/txt_sample_video"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_add_link"
+                android:layout_marginLeft="@dimen/margin_img_sample"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/samplebtn"
+                    android:background="@mipmap/upload_link_icon"
+                    android:layout_width="@dimen/width_img_add_link"
+                    android:layout_height="@dimen/height_img_add_link"
+                    android:scaleType="fitXY" />
+
+
+                <TextView
+                    android:id="@+id/txt_Upload_Link"
+                    android:clickable="false"
+                    android:layout_below="@+id/samplebtn"
+                    android:textColor="@color/white"
+                    android:text="Upload\nLink"
+                    android:textSize="@dimen/txt_sample_video"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_capture"
+                android:background="@android:color/transparent"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/width_height_btn_capture"
+                android:layout_height="@dimen/width_height_btn_capture" />
+
+
+            <!--<ProgressBar-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:id="@+id/circular_progress_bar1"-->
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--android:layout_width="46dp"-->
+                <!--android:layout_height="46dp"-->
+                <!--android:indeterminate="false"-->
+                <!--android:max="100"-->
+                <!--android:progress="100"-->
+                <!--android:progressDrawable="@drawable/circular_progressbar_orange"-->
+                <!--android:background="@mipmap/timer_countdown_background" />-->
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/circular_progress_bar1"
+                android:layout_width="@dimen/width_height_img_progress_bar"
+                android:layout_height="@dimen/width_height_img_progress_bar"
+                android:background="@mipmap/timer_countdown_background" />
+
+
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:id="@+id/circular_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/width_height_orange_progress_bar"
+                android:layout_height="@dimen/width_height_orange_progress_bar"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progressbar" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/txt_timeremaining"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textSize="@dimen/txt_record_time"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_gallery_btn"
+                android:layout_marginRight="@dimen/margin_img_sample"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/gallerybtn"
+                    android:background="@mipmap/video_gallery_icon"
+                    android:layout_width="@dimen/width_img_gallery"
+                    android:layout_height="@dimen/height_img_gallery"
+                    android:scaleType="fitXY" />
+
+
+                <TextView
+                    android:id="@+id/txt_Video_Gallery"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/gallerybtn"
+                    android:textColor="@color/white"
+                    android:text="Video\nGallery"
+                    android:textSize="@dimen/txt_sample_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_Comment"
+        android:background="@color/white"
+        android:layout_above="@+id/rel_btn_Post_Connect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edt_height_record_screen">
+
+        <EditText
+            android:id="@+id/edt_Comment"
+            android:background="@color/white"
+            android:hint="Type a Comment"
+            android:textColorHint="@color/edt_record_screen"
+            android:maxLines="4"
+            android:textSize="@dimen/txt_edt_record_screen"
+            android:textColor="@color/edt_record_screen"
+            android:padding="@dimen/edt_padding_record_screen"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/txt_comment_characters"
+            android:text="50 words"
+            android:textSize="10sp"
+            android:textColor="@color/edt_record_screen"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_btn_Post_Connect"
+        android:background="@color/record_screen_overlay_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_overlay_btn_record_screen">
+
+        <Button
+            android:id="@+id/btn_Post"
+            android:text="Post"
+            android:textSize="@dimen/btn_text_Size"
+            android:textColor="@color/grey_bg_transparent"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/width_btn_post_connect"
+            android:layout_height="@dimen/height_btn_post_connect"
+            android:background="@mipmap/button_inactive"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_Skip"
+            android:text="Send"
+            android:textColor="@color/btn_Login"
+            android:textSize="@dimen/btn_text_Size"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/width_btn_post_connect"
+            android:layout_height="@dimen/height_btn_post_connect"
+            android:background="@mipmap/button_active"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_header_with_back"
+    android:id="@+id/rel_header">
+
+
+    <RelativeLayout
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/height_header_with_back"
+        android:layout_height="@dimen/height_header_with_back">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left_imgback_header_back"
+        android:background="@mipmap/back_arrow"
+        android:layout_width="@dimen/width_img_back"
+        android:layout_height="@dimen/height_img_back" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/header"
+        android:background="@android:color/transparent"
+        android:text="Title"
+        android:textSize="@dimen/txt_header_back"
+        android:textColor="@color/tc_header_color"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_login_header"
+        android:textAllCaps="false"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_More"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/wd_ht_btn_more_conn"
+        android:layout_height="@dimen/wd_ht_btn_more_conn">
+
+        <Button
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/margin_left_imgback_header_back"
+            android:layout_width="@dimen/width_btn_more_conn"
+            android:layout_height="@dimen/height_btn_more_conn"
+            android:background="@mipmap/view_more_icon" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

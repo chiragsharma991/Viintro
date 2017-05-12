@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sample_video_full_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viintro.Viintro.VideoRecord.PlayVideo">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin_name"
+            android:background="@color/black"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_avatar"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_FullName"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="ABC XYZ"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_Designation"
+                    android:textSize="14dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"
+                    android:text="vhghj hui iuhuh cdf"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_below="@+id/lin_name"
+            android:id="@+id/framelayout"
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+
+            <SurfaceView
+                android:id="@+id/videoSurface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/img_play_pause"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/image_play"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayot1"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_above="@+id/llLikes"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llLikes"
+        android:visibility="gone"
+        android:layout_above="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/txt_no_of_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txt_no_of_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txt_no_of_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/lin_btn_like_comment_share"
+        android:background="#ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/lin_btn_like_comment_share"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true" >
+
+
+        <LinearLayout
+            android:id="@+id/lin_like"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_like"
+                android:background="@android:color/white"
+                android:clickable="false"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/txt_like"
+                android:layout_marginLeft="8dp"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_comment"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_comment"
+                android:background="@android:color/white"
+                android:clickable="false"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/txt_comment"
+                android:layout_marginLeft="8dp"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_share"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:background="@android:color/white"
+                android:clickable="false"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/txt_share"
+                android:layout_marginLeft="8dp"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

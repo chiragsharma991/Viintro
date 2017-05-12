@@ -1,0 +1,274 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="label_size">24dp</dimen>
+    <dimen name="login_text_size">16dp</dimen>
+    <dimen name="signup_text_size">14dp</dimen>
+    <dimen name="about_viintro">16dp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="margin_left">16dp</dimen>
+    <dimen name="margin_right">16dp</dimen>
+    <dimen name="div_height">2dp</dimen>
+
+    <dimen name="edt_size">14sp</dimen>
+    <dimen name="edt_padding">8dp</dimen>
+<dimen name="connection_txt_name">14sp</dimen>
+    <dimen name="btn_text_Size">16sp</dimen>
+    <dimen name="text_record_screen">14sp</dimen>
+    <dimen name="edt_margin">10dp</dimen>
+    <dimen name="btn_margin">16dp</dimen>
+    <dimen name="text_login_with">14dp</dimen>
+    <dimen name="twt_width">40dp</dimen>
+    <dimen name="twt_height">40dp</dimen>
+
+
+    <dimen name="social_login_width">100dp</dimen>
+
+    <dimen name="text_question_height">28dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="margin_list">8dp</dimen>
+    <dimen name="img_share_post">50dp</dimen>
+
+    <dimen name="profile_data">14sp</dimen>
+    <dimen name="profile_data_value">12sp</dimen>
+    
+    
+    
+    <!-- New Dimension-->
+
+    <dimen name="left_white_background">16dp</dimen>
+    <dimen name="right_white_background">32dp</dimen>
+    <dimen name="left_orange_background">32dp</dimen>
+    <dimen name="right_orange_background">16dp</dimen>
+
+    <dimen name="login_content_padding">30dp</dimen>
+    <dimen name="top_login_header">20dp</dimen>
+    <dimen name="width_login_header">128dp</dimen>
+    <dimen name="height_login_header">28dp</dimen>
+    <dimen name="login_white_top">95dp</dimen>
+    <dimen name="login_orange_top">123dp</dimen>
+    <!--<dimen name="login_white_bottom">78dp</dimen>-->
+    <dimen name="login_orange_bottom">64dp</dimen>
+    <dimen name="text_inputtype_padding">2dp</dimen>
+    <dimen name="txt_hint_login_page">10sp</dimen>
+    <dimen name="txt_edt_login_page">12sp</dimen>
+    <dimen name="txt_incorrect">10sp</dimen>
+    <dimen name="edt_height">44dp</dimen>
+    <dimen name="txt_login_btn">14sp</dimen>
+    <dimen name="txt_forgotpw_login_page">12sp</dimen>
+    <dimen name="txt_joinnow_login_page">12sp</dimen>
+    <dimen name="txt_or_login_with">10sp</dimen>
+    <dimen name="txt_social_login">12sp</dimen>
+    <dimen name="btn_social_login_height">38dp</dimen>
+    <dimen name="btn_login_height">42dp</dimen>
+    <dimen name="top_login_edt_email">16dp</dimen>
+    <dimen name="top_login_edt_pw">76dp</dimen>
+    <dimen name="top_login_btn">140dp</dimen>
+    <dimen name="top_forgot_pw_join_now">194dp</dimen>
+    <dimen name="height_forgot_pw_join_now">20dp</dimen>
+    <dimen name="top_login_with">250dp</dimen>
+    <dimen name="height_login_with">30dp</dimen>
+    <dimen name="top_fb">276dp</dimen>
+    <dimen name="top_twitter">322dp</dimen>
+    <dimen name="top_google">368dp</dimen>
+    <dimen name="fb_width">18dp</dimen>
+    <dimen name="fb_height">18dp</dimen>
+    <dimen name="gplus_width">18dp</dimen>
+    <dimen name="gplus_height">18dp</dimen>
+
+    <dimen name="forgot_orange_bg_height">185dp</dimen>
+    <dimen name="forgot_white_bg_height">190dp</dimen>
+    <dimen name="forgot_content_padding">30dp</dimen>
+    <dimen name="txt_forgotpw">20sp</dimen>
+    <dimen name="top_forgotpw">18dp</dimen>
+    <dimen name="top_edt_email_forgot_pw_page">56dp</dimen>
+    <dimen name="top_forgot_submit">130dp</dimen>
+    <dimen name="txt_forgot_submit">14sp</dimen>
+
+    <dimen name="reset_orange_bg_height">173dp</dimen>
+    <dimen name="reset_white_bg_height">175dp</dimen>
+    <dimen name="top_reset_link">27dp</dimen>
+    <dimen name="txt_reset_link">12sp</dimen>
+    <dimen name="top_back_login_btn">78dp</dimen>
+    <dimen name="top_resend_link">138dp</dimen>
+    <dimen name="txt_resend_link">10sp</dimen>
+
+    <dimen name="registration_white_top">70dp</dimen>
+    <dimen name="registration_orange_top">98dp</dimen>
+    <dimen name="top_registration_edt_name">16dp</dimen>
+    <dimen name="top_registration_edt_email">76dp</dimen>
+    <dimen name="top_registration_edt_pw">136dp</dimen>
+    <dimen name="top_registration_btn_register">200dp</dimen>
+    <dimen name="top_login_btn_inreg_page_">258dp</dimen>
+    <dimen name="txt_by_registering">11sp</dimen>
+    <dimen name="top_register_with">312dp</dimen>
+    <dimen name="top_fb_reg_page">340dp</dimen>
+    <dimen name="top_twit_reg_page">386dp</dimen>
+    <dimen name="top_google_reg_page">432dp</dimen>
+    <dimen name="bottom_white_bg_reg_page">55dp</dimen>
+
+    <dimen name="top_terms_condi_header">13dp</dimen>
+    <dimen name="txt_terms_condi_header">14sp</dimen>
+    <dimen name="tc_white_top">54dp</dimen>
+    <dimen name="tc_orange_top">28dp</dimen>
+    <dimen name="tc_content_padding">16dp</dimen>
+    <dimen name="width_img_back">11dp</dimen>
+    <dimen name="height_img_back">16dp</dimen>
+
+
+    <dimen name="top_verification">27dp</dimen>
+    <dimen name="top_txt_verification_code">65dp</dimen>
+    <dimen name="txt_verification_code">14sp</dimen>
+    <dimen name="top_edt_otp">118dp</dimen>
+    <dimen name="top_btn_verify">190dp</dimen>
+    <dimen name="top_change_no_resend_otp">242dp</dimen>
+    <dimen name="txt_change_no_resend_otp">12sp</dimen>
+    <dimen name="btn_height">30dp</dimen>
+
+
+    <dimen name="height_header_overlay_record_screen">42dp</dimen>
+    <dimen name="txt_header_record_screen_onboarding">12sp</dimen>
+    <dimen name="top_header_record_screen_onboarding">13dp</dimen>
+    <dimen name="height_img_camera">20dp</dimen>
+    <dimen name="width_img_camera">28dp</dimen>
+    <dimen name="height_img_flash">19dp</dimen>
+    <dimen name="width_img_flash">12dp</dimen>
+    <dimen name="margin_img_cam_flash">14dp</dimen>
+
+
+    <dimen name="height_bottom_overlay_record_screen">90dp</dimen>
+    <dimen name="height_img_sample_video">28dp</dimen>
+    <dimen name="width_img_sample_video">42dp</dimen>
+    <dimen name="txt_sample_video">12sp</dimen>
+    <dimen name="margin_img_sample">17dp</dimen>
+    <dimen name="height_img_gallery">28dp</dimen>
+    <dimen name="width_img_gallery">28dp</dimen>
+    <dimen name="width_img_add_link">30dp</dimen>
+    <dimen name="height_img_add_link">30dp</dimen>
+    <dimen name="txt_record_time">16sp</dimen>
+    <dimen name="edt_height_record_screen">48dp</dimen>
+    <dimen name="edt_padding_record_screen">14dp</dimen>
+    <dimen name="txt_edt_record_screen">13sp</dimen>
+    <dimen name="height_bottom_overlay_btn_record_screen">57dp</dimen>
+    <dimen name="width_height_btn_capture">50dp</dimen>
+    <dimen name="width_height_img_progress_bar">46dp</dimen>
+    <dimen name="width_height_orange_progress_bar">64dp</dimen>
+
+    <dimen name="height_btn_post_connect">37dp</dimen>
+    <dimen name="width_btn_post_connect">140dp</dimen>
+
+    <dimen name="location_white_top">216dp</dimen>
+    <dimen name="location_orange_top">238dp</dimen>
+    <dimen name="location_top">26dp</dimen>
+    <dimen name="location_left">30dp</dimen>
+    <dimen name="text_location_left">30dp</dimen>
+    <dimen name="text_location_top">36dp</dimen>
+    <dimen name="btn_location_top">32dp</dimen>
+    <dimen name="location_white_bg_height">198dp</dimen>
+    <dimen name="location_orange_bg_height">194dp</dimen>
+    <dimen name="text_select_location">12sp</dimen>
+
+    <dimen name="onboarding_white_top">172dp</dimen>
+    <dimen name="onboarding_orange_top">192dp</dimen>
+    <dimen name="relative_student_top">20dp</dimen>
+    <dimen name="relative_professional_top">15dp</dimen>
+    <dimen name="text_onboarding_student">14sp</dimen>
+    <dimen name="edt_onboarding_left">13dp</dimen>
+    <dimen name="edt_onboarding_right">13dp</dimen>
+    <dimen name="edt_onboarding_top">76dp</dimen>
+    <dimen name="edt_onboarding_second_top">8dp</dimen>
+    <dimen name="rel_onboarding">260dp</dimen>
+    <dimen name="spinner_onboarding_height">15dp</dimen>
+    <dimen name="spinner_onboarding_width">24dp</dimen>
+    <dimen name="btn_submit_onboarding_top">18dp</dimen>
+    <dimen name="lin_onboarding_bottom">24dp</dimen>
+    <dimen name="mob_onboarding_left">36dp</dimen>
+    <dimen name="margin_onboarding_texterror">16dp</dimen>
+    <dimen name="top_scr_onboarding">90dp</dimen>
+    <dimen name="intro_video_height">176dp</dimen>
+    <dimen name="profile_pic_height_width">58dp</dimen>
+    <dimen name="profile_pic_margin_top">138dp</dimen>
+    <dimen name="profile_pic_margin_left">30dp</dimen>
+    <dimen name="img_edit_height">25dp</dimen>
+    <dimen name="text_profile_name">20sp</dimen>
+    <dimen name="text_profile_desgn">14sp</dimen>
+    <dimen name="text_profile_margin_left">30dp</dimen>
+    <dimen name="text_profile_margin_rihgt">20dp</dimen>
+    <dimen name="text_followers">16sp</dimen>
+    <dimen name="text_followings_margin_left">44dp</dimen>
+    <dimen name="btn_upload_video_margin">45dp</dimen>
+    <dimen name="profile_margin_top">20dp</dimen>
+    <dimen name="profile_orange_top">45dp</dimen>
+    <dimen name="profile_cards_height">54dp</dimen>
+    <dimen name="profile_cards_contact_details_height">206dp</dimen>
+    <dimen name="space_cardview_margin_myprofile">20dp</dimen>
+
+    <dimen name="height_header_add_link">42dp</dimen>
+    <dimen name="txt_add_link_header">13sp</dimen>
+    <dimen name="width_img_close">13dp</dimen>
+    <dimen name="height_img_close">13dp</dimen>
+    <dimen name="top_edt_add_link">58dp</dimen>
+    <dimen name="margin_edt_add_link">20dp</dimen>
+    <dimen name="height_edt_add_link">52dp</dimen>
+    <dimen name="txt_edt_add_link">12sp</dimen>
+    <dimen name="top_edt_add_link_description">120dp</dimen>
+    <dimen name="height_edt_add_link_description">105dp</dimen>
+    <dimen name="top_edt_add_link_img_thumbnail">245dp</dimen>
+    <dimen name="height_edt_add_link_img_thumbnail">150dp</dimen>
+    <dimen name="height_edt_add_link_post_btn">442dp</dimen>
+    <dimen name="width_img_play">30dp</dimen>
+    <dimen name="height_img_play">35dp</dimen>
+
+    <dimen name="margin_cardview_left_right">8dp</dimen>
+    <dimen name="margin_search_home">14dp</dimen>
+    <dimen name="height_search_home">40dp</dimen>
+    <dimen name="txt_search_home">12sp</dimen>
+    <dimen name="width_imgsearch_home">15dp</dimen>
+    <dimen name="height_imgsearch_home">15dp</dimen>
+    <dimen name="width_imgsettings_home">15dp</dimen>
+    <dimen name="height_imgsettings_home">15dp</dimen>
+
+    <dimen name="top_conncount">18dp</dimen>
+    <dimen name="wid_ht_img_connections">28dp</dimen>
+    <dimen name="txt_connectionscount">13sp</dimen>
+    <dimen name="height_txt_connectionscount">40dp</dimen>
+    <dimen name="height_txt_header_suggestions">45dp</dimen>
+    <dimen name="txt_header_suggestions">13sp</dimen>
+    <dimen name="txt_see_all">12sp</dimen>
+    <dimen name="top_txt_name_inv_conn_sugg">14dp</dimen>
+    <dimen name="marg_right_txt_name_inv_conn_sugg">8dp</dimen>
+    <dimen name="marg_left_txt_name_inv_conn_sugg">40dp</dimen>
+    <dimen name="txt_name_inv_conn_sugg">12sp</dimen>
+    <dimen name="txt_desg_inv_conn_sugg">11sp</dimen>
+    <dimen name="height_btn_inv_conn_sugg">33dp</dimen>
+    <dimen name="top_btn_inv_conn_sugg">15dp</dimen>
+    <dimen name="txt_btn_inv_conn_sugg">13sp</dimen>
+
+    <dimen name="height_vw_sort_by">42dp</dimen>
+    <dimen name="txt_sort_by">12sp</dimen>
+    <dimen name="width_img_sort_by">17dp</dimen>
+    <dimen name="height_img_sort_by">15dp</dimen>
+    <dimen name="wd_ht_btn_more_conn">40dp</dimen>
+    <dimen name="width_btn_more_conn">18dp</dimen>
+    <dimen name="height_btn_more_conn">4dp</dimen>
+
+    <dimen name="height_header_with_back">40dp</dimen>
+    <dimen name="margin_left_imgback_header_back">20dp</dimen>
+    <dimen name="txt_header_back">14sp</dimen>
+    <dimen name="height_search_messages">54dp</dimen>
+
+
+    <dimen name="new_message_unchacked">19sp</dimen>
+    <dimen name="new_message_checked">19dp</dimen>
+
+
+
+
+
+</resources>

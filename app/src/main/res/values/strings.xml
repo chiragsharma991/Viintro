@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Viintro</string>
+    <string name="name">ViiNTRO</string>
+    <string name="facebook_app_id">252851911803952</string>
+    <string name="text_sign_up">Sign up</string>
+    <string name="about_viintro">About Viintro</string>
+    <string name="des_viintro">Describing Viintro</string>
+    <string name="sample_videos">SAMPLE VIDEOS FOR REFERENCE</string>
+    <string name="description">Media Controls</string>
+    <string name="btn_show_Pw">Show</string>
+    <string name="btn_disable_pw">Disable</string>
+
+
+
+
+
+
+
+    <string name="have_an_acc">Have an account ?</string>
+    <string name="popup_text">Enter Email</string>
+    <string name="Registration_failed">Registration failed</string>
+    <string name="Login_failed">Login failed</string>
+    <string name="MyProfile_failed">My Profile failed</string>
+    <string name="Post_failed">Post failed</string>
+    <string name="Live_videos_failed">Live Videos failed</string>
+    <string name="ProfileViews_failed">Profile Views failed</string>
+    <string name="Followers_failed">Failed to get followers list</string>
+    <string name="Followings_failed">Failed to get followings list</string>
+    <string name="Facebook_cancel">Facebook login cancelled</string>
+    <string name="Google_Login_Failed">Google signIn failed</string>
+    <string name="permission_fb_email">"You have declined email permission without these permission you can't proceed"</string>
+    <string name="text_question">ARE YOU A</string>
+    <string name="text_student">I am a student</string>
+    <string name="text_professional">I am a professional</string>
+    <string name="text_mobileno">Mobile number (optional)</string>
+    <string name="text_verifyno">VERIFY NUMBER</string>
+    <string name="server_client_id">669564481057-c4bknfhjv79l5j5im32hgvpeu0680l5v.apps.googleusercontent.com</string>
+    <string name="text_otp"> Enter the verification code sent to your phone number ending</string>
+
+
+    <string name="network_connection">Please check your network connection</string>
+    <string name="profile_upade">Profile has been updated</string>
+    <string name="forgot_pw">Unable to send link to your email</string>
+    <!--<string name="text_location">YOUR LOCATION</string>-->
+    <string name="select_location">Select location</string>
+    <string name="message_cf_location_permission">Without this permission the app is unable to get your location. Are you sure you want to deny this permission?</string>
+    <string name="Otp_failed">Otp generation failed</string>
+    <string name="Connection_request_failed">Connection request failed</string>
+    <string name="Connection_accept_failed">Connection accept failed</string>
+    <string name="Connection_reject_failed">Connection reject failed</string>
+    <string name="Connection_remove_failed">Connection remove failed</string>
+    <string name="Connection_connection_request_failed">Cancel connection request failed</string>
+    <string name="Follow_request_failed">Follow request failed</string>
+    <string name="Block_user_failed">Block User failed</string>
+    <string name="Logout_request_failed">Logout failed</string>
+    <string name="send_message_failed">Send message failed</string>
+    <string name="Unblock_user_failed">Unblock User failed</string>
+    <string name="Post_report_failed">Post report failed</string>
+    <string name="Post_hide_failed">Post hide failed</string>
+    <string name="Post_like_failed">Post like failed</string>
+    <string name="Contact_details_failed">Contact Details failed</string>
+    <string name="Companies_details_failed">Companies Details failed</string>
+    <string name="Designation_details_failed">Designation Details failed</string>
+    <string name="College_details_failed">College Details Failed</string>
+    <string name="Other_details_failed">Other Details Failed</string>
+    <string name="Qualification_details_failed">Qualification Details Failed</string>
+    <string name="Schools_details_failed">School Details Failed</string>
+    <string name="Skills_details_failed">Skills Details Failed</string>
+    <string name="Edit_profile_failed">Edit Profile Failed</string>
+    <string name="Unfollow_request_failed">Unfollow request failed</string>
+    <string name="video_upload_failed">Video upload Failed, Please try again</string>
+    <string name="Process_failed">Process failed</string>
+    <string name="Otp_verify_failed">Otp verification failed</string>
+    <string name="contact_details">ADD CONTACT DETAILS</string>
+    <string name="add_colleges">ADD COLLEGES</string>
+    <string name="add_qualification">ADD QUALIFICATION</string>
+    <string name="add_school">ADD SCHOOLS</string>
+    <string name="add_skills">ADD COURSE/SKILLS</string>
+    <string name="add_designation">ADD DESIGNATION</string>
+    <string name="add_companies">ADD COMPANIES</string>
+    <string name="live_videos">live videos</string>
+    <string name="upload_videos">Upload New Video</string>
+    <string name="others">OTHER</string>
+    <string name="no_connection_found">No Connections found</string>
+    <string name="no_suggestions_found">No Suggestions found</string>
+    <string name="public_profile_msg">You can see full profile after connected or following</string>
+    <string name="PublicProfile_failed">Public profile loading failed</string>
+    <string name="Follow">Follow</string>
+    <string name="Following">Following</string>
+    <string name="access_token_expired">Access Token Expired</string>
+    <string name="logout">Do you really want to logout?</string>
+    <string name="refresh_token_expired">Refresh Token Expired</string>
+    <string name="post_details_open_failed">Failed to open details</string>
+    <string name="internal_server_error">Internal server error</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+
+    <!-- NEW STRING MESSAGES -->
+    <string name="button_login">Log in</string>
+    <string name="btn_Login">Log in</string>
+    <string name="btn_JoinNow">Join now</string>
+    <string name="text_ForgotPW">Forgot password?</string>
+    <string name="text_login_with">or Log in with</string>
+    <string name="txt_Facebook">Facebook</string>
+    <string name="txt_Google">Google</string>
+    <string name="txt_Twitter">Twitter</string>
+    <string name="enter_email_id">Please enter your email ID</string>
+    <string name="valid_email_id">Please enter a valid email ID</string>
+    <string name="enter_password">Please enter your password</string>
+    <string name="text_send_link">SEND LINK</string>
+    <string name="reg_email_id">Please enter a registered email ID</string>
+    <string name="text_resend_link">Resend link</string>
+    <string name="text_location_submit">Submit</string>
+    <string name="enter_university">Please enter the university name</string>
+    <string name="enter_course">Please enter the course name</string>
+    <string name="enter_company">Please enter the name of your company</string>
+    <string name="enter_title">Please enter your title</string>
+    <string name="text_submit">Submit</string>
+
+
+    <string name="btn_Register">Register</string>
+    <string name="by_registering">By registering, you agree to</string>
+    <string name="agree_terms_conditions">Terms and Conditions</string>
+    <string name="text_register_with">Or Register with</string>
+    <string name="enter_name">Please enter your name</string>
+    <string name="password_validation">Password should have at least 6 characters</string>
+    <string name="terms_conditions">Terms and Conditions</string>
+    <string name="text_verify">Verify</string>
+    <string name="text_changeNo">Change number</string>
+    <string name="text_resend_otp">Resend</string>
+
+    <string name="txt_add_link_header">Add YouTube link</string>
+    <string name="hint_add_link">Type or paste link here</string>
+    <string name="hint_add_link_description">Description</string>
+
+</resources>

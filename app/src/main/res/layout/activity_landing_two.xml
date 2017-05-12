@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_landing_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundSplash2"
+    tools:context="com.viintro.Viintro.Landing.LandingActivityTwo">
+
+    <TextView
+        android:id="@+id/textaboutViintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/about_viintro"
+        android:textStyle="bold"
+        android:textSize="@dimen/about_viintro"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_shadow"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_above="@+id/relativeBottom"
+        android:layout_below="@+id/textaboutViintro">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/des_viintro"
+            android:id="@+id/textDesViintro" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeBottom"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/backgroundSplash2"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/splash_circle_fade"
+                android:layout_marginRight="10dp"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/splash_circle_black"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/splash_circle_fade"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/button_login"
+            android:textStyle="bold"
+            android:layout_below="@+id/ll_circle"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:background="@drawable/login_button_background_black"
+            android:textSize="@dimen/login_text_size"
+            />
+
+        <Button
+            android:id="@+id/textSignUp"
+            android:text="@string/text_sign_up"
+            android:textColor="#000000"
+            android:textSize="@dimen/signup_text_size"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

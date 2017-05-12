@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/margin_cardview_left_right"
+    android:layout_marginLeft="@dimen/margin_cardview_left_right"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/txt_no_invitations"
+        android:text="No pending invitations"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="left|center_vertical"
+        android:background="@android:color/white"
+        android:textAllCaps="false"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/txt_no_invitations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardElevation="6dp"
+        card_view:cardUseCompatPadding="true">
+
+    <Button
+        android:id="@+id/btn_Manage_All"
+        android:background="@color/white"
+        android:text="Manage connections"
+        android:textSize="@dimen/txt_connectionscount"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_txt_connectionscount"
+        android:textAllCaps="false" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

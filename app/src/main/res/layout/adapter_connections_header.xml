@@ -1,0 +1,19 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_txt_header_suggestions"
+    android:layout_marginRight="@dimen/margin_search_home"
+    android:layout_marginLeft="@dimen/margin_search_home"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/txt_header_connections"
+        android:text="vxcv"
+        android:textSize="@dimen/txt_header_suggestions"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical" />
+
+
+</RelativeLayout>

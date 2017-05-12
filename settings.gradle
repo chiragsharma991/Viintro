@@ -1,0 +1,1 @@
+include ':app', ':video-trimmer', ':video_compressor_1'

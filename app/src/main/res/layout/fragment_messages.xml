@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundSplash2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/header"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/rel_search_messages"
+            android:layout_below="@+id/rel_header"
+            android:layout_height="@dimen/height_search_messages"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/margin_cardview_left_right"
+            android:layout_marginLeft="@dimen/margin_cardview_left_right"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true">
+
+
+            <RelativeLayout
+                android:id="@+id/rel_search_messages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_search_messages"
+                android:background="@color/white"
+                android:layout_toLeftOf="@+id/img_search"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:hint="Search messages"
+                android:textColorHint="#262626"
+                android:textSize="13sp"
+                android:textColor="#262626" />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/search_for_messages"
+                android:layout_height="@dimen/height_imgsearch_home"
+                android:layout_width="@dimen/width_imgsearch_home" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview_Messages"
+            android:layout_below="@+id/rel_search_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_send_new_message"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_width="@dimen/design_fab_image_size"
+            android:layout_height="@dimen/design_fab_image_size"
+            android:layout_margin="12dp"
+            android:background="@mipmap/new_message_floating_button" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_no_of_messages"
+        android:visibility="gone"
+        android:text="No Messages"
+        android:textSize="@dimen/btn_text_Size"
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_no_internet_connection"
+        android:visibility="gone"
+        android:text="No Internet Connection"
+        android:textSize="@dimen/btn_text_Size"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

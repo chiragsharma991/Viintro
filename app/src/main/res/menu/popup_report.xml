@@ -1,0 +1,8 @@
+<menu xmlns:androclass="http://schemas.android.com/apk/res/android">
+
+    <item
+        androclass:title="Share this profile"
+        androclass:id="@+id/share_profile"
+        />
+
+</menu>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_link"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:id="@+id/header_add_link"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header_add_link">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_centerVertical="true"
+            android:padding="30dp"
+            android:layout_marginLeft="@dimen/left_white_background"
+            android:background="@mipmap/cancel_button"
+            android:backgroundTint="@color/white"
+            android:layout_width="@dimen/width_img_close"
+            android:layout_height="@dimen/height_img_close" />
+
+        <TextView
+            android:id="@+id/header"
+            android:background="@android:color/transparent"
+            android:text="@string/txt_add_link_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_add_link_header"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtLink"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edt_add_link"
+        android:alpha="1.0"
+        android:background="@android:color/white"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:textSize="@dimen/txt_edt_add_link"
+        android:textColor="@color/edt_add_link"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/top_edt_add_link"
+        android:layout_marginLeft="@dimen/margin_edt_add_link"
+        android:layout_marginRight="@dimen/margin_edt_add_link"
+        android:hint="@string/hint_add_link"
+        android:textColorHint="@color/hint_edt_add_link"
+        />
+
+
+    <EditText
+        android:id="@+id/edtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edt_add_link_description"
+        android:alpha="1.0"
+        android:background="@android:color/white"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="18dp"
+        android:gravity="top"
+        android:textSize="@dimen/txt_edt_add_link"
+        android:textColor="@color/edt_add_link"
+        android:layout_marginTop="@dimen/top_edt_add_link_description"
+        android:layout_marginLeft="@dimen/margin_edt_add_link"
+        android:layout_marginRight="@dimen/margin_edt_add_link"
+        android:hint="@string/hint_add_link_description"
+        android:textColorHint="@color/hint_edt_add_link" />
+
+
+    <TextView
+        android:id="@+id/txt_no_of_words"
+        android:layout_alignRight="@+id/edtDescription"
+        android:padding="10dp"
+        android:layout_marginTop="190dp"
+        android:text="50 words"
+        android:textSize="10sp"
+        android:textColor="@color/edt_record_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edt_add_link_img_thumbnail"
+        android:layout_marginTop="@dimen/top_edt_add_link_img_thumbnail"
+        android:layout_marginLeft="@dimen/margin_edt_add_link"
+        android:layout_marginRight="@dimen/margin_edt_add_link"
+        android:id="@+id/rl" >
+
+        <ImageView
+            android:background="@mipmap/add_youtube_link_empty_background_for_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_thumbnail"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:layout_width="@dimen/width_img_play"
+            android:layout_height="@dimen/height_img_play"
+            android:src="@mipmap/ic_play_arrow_24dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imgPlay" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:text="Post"
+        android:textSize="@dimen/btn_text_Size"
+        android:textColor="@color/grey_bg_transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/width_btn_post_connect"
+        android:layout_height="@dimen/height_btn_post_connect"
+        android:background="@drawable/btn_border_grey_bg_transparent"
+        android:alpha="0.9"
+        android:layout_marginTop="@dimen/height_edt_add_link_post_btn"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

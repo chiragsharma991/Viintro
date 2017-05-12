@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viintro.Viintro.MyProfile.EditProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_editprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_bottom">
+
+        <include layout="@layout/header"/>
+
+        <ScrollView
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:focusableInTouchMode="true">
+                />
+
+                <ImageView
+                    android:id="@+id/image_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/ic_person_black"
+                    android:layout_below="@+id/toolbar"/>
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_profile"
+                    android:layout_marginTop="15dp"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_name"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:background="@drawable/login_button_background_black" />
+                <TextView
+                    android:id="@+id/text_university"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_name"
+                    android:layout_marginTop="15dp"
+                    android:text="University" />
+
+                <EditText
+                    android:id="@+id/edt_university"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_university"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:background="@drawable/login_button_background_black" />
+                <TextView
+                    android:id="@+id/text_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_university"
+                    android:layout_marginTop="15dp"
+                    android:text="Course" />
+
+                <EditText
+                    android:id="@+id/edt_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_course"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:background="@drawable/login_button_background_black" />
+
+
+                <TextView
+                    android:id="@+id/text_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_course"
+                    android:layout_marginTop="15dp"
+                    android:text="Company"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_company"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:background="@drawable/login_button_background_black"/>
+
+                <TextView
+                    android:id="@+id/text_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_company"
+                    android:layout_marginTop="15dp"
+                    android:text="Designation"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_designation"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:background="@drawable/login_button_background_black"/>
+
+                <TextView
+                    android:id="@+id/text_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_designation"
+                    android:layout_marginTop="15dp"
+                    android:text="Location"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/llLocation"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/text_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:id="@+id/text_selectedlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="5"
+                        android:padding="8dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="@dimen/login_text_size"
+                        android:background="@drawable/login_button_background_black"
+                        android:text="@string/select_location"
+                        />
+
+                    <ImageView
+                        android:id="@+id/find_location"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_button_background_black"
+                        android:src="@mipmap/location" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llLocation"
+                    android:layout_marginTop="15dp"
+                    android:text="Birthdate"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/llBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3"
+                    android:layout_below="@+id/text_birthdate"
+                    >
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spinner_month"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginRight="8dp"-->
+                        <!--android:drawableRight="@mipmap/chevron_down"-->
+                        <!--android:background="@drawable/spinner_background"-->
+
+                        <!--&gt;-->
+
+                        <EditText
+                            android:id="@+id/edt_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:hint="MM"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/spinner_background"/>
+
+
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spinner_date"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginRight="8dp"-->
+                        <!--android:drawableRight="@mipmap/chevron_down"-->
+                        <!--android:background="@drawable/spinner_background"-->
+                        <!--&gt;-->
+
+                        <EditText
+                            android:id="@+id/edt_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:hint="DD"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/spinner_background"/>
+
+
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spinner_year"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:drawableRight="@mipmap/chevron_down"-->
+                        <!--android:background="@drawable/spinner_background"-->
+                        <!--&gt;-->
+
+                    <!--</Spinner>-->
+
+                    <EditText
+                        android:id="@+id/edt_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:hint="YYYY"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/spinner_background"/>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llBirthdate"
+                    android:text="SAVE INFO"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_button_background_black"/>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

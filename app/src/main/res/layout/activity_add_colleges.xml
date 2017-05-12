@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_colleges"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_bottom"
+    android:paddingLeft="@dimen/margin_left"
+    android:paddingRight="@dimen/margin_right"
+    android:paddingTop="@dimen/margin_top"
+    android:background="#D8000000"
+    tools:context="com.viintro.Viintro.MyProfile.AddCollegesActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Add Colleges"
+            android:textSize="20dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_close_white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeTitle"
+        android:layout_below="@+id/llHeader"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Add Colleges"
+            />
+
+        <TextView
+            android:id="@+id/text_char_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text="150 characters left"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_colleges"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:maxLength="150"
+        android:inputType="textCapWords|textMultiLine"
+        android:padding="8dp"
+        android:gravity="top|left"
+        android:layout_below="@+id/relativeTitle"
+        android:background="@drawable/myprofile_edittext_background"
+        />
+
+    <Button
+        android:id="@+id/btn_saveInfo"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/edt_colleges"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SAVE INFO"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:background="@drawable/login_button_background"/>
+
+</RelativeLayout>
